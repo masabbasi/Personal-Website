@@ -1,0 +1,64 @@
+@import "normalize.css";
+@import "fonts.css";
+@import "grid.css";
+
+:root {
+/*------------------------------
+Colors Variables
+------------------------------*/
+	--text-color: #333333; /*For Night Mode: #*/
+	--main-bg-color: #ffffff; /*For Night Mode: #*/
+	--section-bg-color: #ffffff; /*For Night Mode: #*/
+	--shadow-color: rgba(19, 182, 255,0.24) ; /*For Night Mode: #*/
+  --white: #ffffff;
+/*------------------------------
+Fonts Variables
+------------------------------*/
+  --font-reg: "Poppins Regular", Arial, Helvetica, sans-serif;
+  --font-med: "Poppins Medium", Arial, Helvetica, sans-serif;
+  --font-sb: "Poppins SemiBold", Arial, Helvetica, sans-serif;
+  --font-bold: "Poppins Bold", Arial, Helvetica, sans-serif;
+  --font-black: "Poppins Black", Arial, Helvetica, sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--font-reg);
+	line-height: 1.5;
+}
+
+/*------------------------------
+Reset - Start
+------------------------------*/
+a {
+	text-decoration: none;
+}
+/*------------------------------
+Reset - End
+------------------------------*/
+
+/*------------------------------
+Helper Class - Start
+------------------------------*/
+/*------------------------------
+Helper Class - End
+------------------------------*/
+
+/*------------------------------
+Components - Start
+------------------------------*/
+/*------------------------------
+Components - End
+------------------------------*/
+
+/*------------------------------
+App - Start
+------------------------------*/
+/*------------------------------
+App - End
+------------------------------*/
+@import "responsive.css";
