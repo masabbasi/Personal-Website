@@ -9,7 +9,7 @@ Colors Variables
 	--text-color: #333333; /*For Night Mode: #*/
 	--main-bg-color: #ffffff; /*For Night Mode: #*/
 	--section-bg-color: #ffffff; /*For Night Mode: #*/
-	--shadow-color: rgba(19, 182, 255,0.24) ; /*For Night Mode: #*/
+	--primary-color:#0ABEAD;
   --white: #ffffff;
 /*------------------------------
 Fonts Variables
@@ -37,6 +37,12 @@ Reset - Start
 a {
 	text-decoration: none;
 }
+
+ul {
+	list-style-type: none;
+	padding-left: 0;
+	margin: 0;
+}
 /*------------------------------
 Reset - End
 ------------------------------*/
@@ -56,9 +62,115 @@ Components - End
 ------------------------------*/
 
 /*------------------------------
-App - Start
+					App - Start
 ------------------------------*/
 /*------------------------------
-App - End
+Header - Start
+------------------------------*/
+.header {
+	background-color: var(--section-bg-color);
+	box-shadow: 0 0.5rem 5rem rgba(4, 195, 255, 0.16);
+	z-index: 100;
+	position: fixed;
+	right: 0;
+	left: 0;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.5rem 0;
+}
+
+.nav__logo {
+	color: var(--primary-color);
+	font-family: var(--font-black);
+	font-size: 5rem;
+	margin: 0;
+}
+
+.menu {
+	display: flex;
+	z-index: 100;
+}
+
+.menu__item {
+	margin-left: 4rem;
+}
+
+.menu__item:first-child {
+	margin-left: 0;
+}
+
+.menu__link {
+	display: block;
+	color: var(--text-color);
+	font-family: var(--font-med);
+	transition: color 150ms ease-in;
+}
+
+.menu__link:hover {
+	color: var(--primary-color);
+}
+
+.menu__link--active {
+	color: var(--primary-color);
+}
+
+.menu__mobile-icon {
+	display: none;
+	width: 5rem;
+	height: 5rem;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.menu__mobile-icon--open {
+
+}
+
+.menu__mobile-line {
+	position: relative;
+	transition: all 100ms ease-in;
+}
+
+.menu__mobile-line, .menu__mobile-line::before, .menu__mobile-line::after {
+	content: "";
+	width: 4.5rem;
+	height: 0.4rem;
+	border-radius: 2rem;
+	background-color: var(--primary-color);
+}
+
+.menu__mobile-line::before {
+	position: absolute;
+	top: 1.2rem;
+	transition: all 150ms ease-in;
+}
+
+.menu__mobile-line::after {
+	position: absolute;
+	bottom: 1.2rem;
+	transition: all 150ms ease-in;
+}
+
+.menu__mobile-icon--open .menu__mobile-line {
+	background-color: transparent;
+}
+
+.menu__mobile-icon--open .menu__mobile-line::before {
+	transform:translateY(-1.2rem) rotate(-45deg);
+}
+
+.menu__mobile-icon--open .menu__mobile-line::after {
+	transform:translateY(1.2rem) rotate(45deg);
+}
+/*------------------------------
+Header - End
+------------------------------*/
+/*------------------------------
+					App - End
 ------------------------------*/
 @import "responsive.css";
