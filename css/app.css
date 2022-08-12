@@ -151,9 +151,6 @@ Header - Start
   cursor: pointer;
 }
 
-.menu__mobile-icon--open {
-}
-
 .menu__mobile-line {
   position: relative;
   transition: all 100ms ease-in;
@@ -198,7 +195,21 @@ Header - End
 /*------------------------------
 Main - Start
 ------------------------------*/
+.section-head {
 
+}
+
+.section-head__title {
+
+}
+
+.section-head__caption {
+
+}
+
+.section-head__line {
+
+}
 /*------------------------------
 Home - Start
 ------------------------------*/
@@ -240,9 +251,6 @@ Home - Start
 	gap: 3rem;
 }
 
-.home__link {
-}
-
 .home__photo {
 	width: 55rem;
 	height: 55rem;
@@ -256,6 +264,56 @@ Home - Start
 
 /*------------------------------
 Home - End
+------------------------------*/
+/*------------------------------
+About Us - Start
+------------------------------*/
+.about-us {
+
+}
+
+.about-wrapper {
+
+}
+
+.about-us-cover {
+
+}
+
+.about-us-cover__img {
+
+}
+
+.about-us-content {
+
+}
+
+.about-us__title {
+
+}
+
+.about-us-__caption {
+
+}
+
+.about-us__list-title {
+
+}
+
+.about-us-list {
+
+}
+
+.about-us-list__item {
+
+}
+
+.about-us__links-wrapper {
+
+}
+
+/*------------------------------
+About Us - End
 ------------------------------*/
 /*------------------------------
 Main - End
