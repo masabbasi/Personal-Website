@@ -18,6 +18,14 @@
 		width: 38rem;
 		height: 38rem;
 	}
+
+	.about-us-cover {
+		flex-basis: 50%;
+	}
+
+	.about-us-content {
+		flex-basis: 50%;
+	}
 }
 
 @media screen and (max-width:992px) {
@@ -52,6 +60,14 @@
 
 	.home .row {
 		flex-direction: column-reverse;
+	}
+
+	.about-wrapper  {
+		flex-direction: column;
+	}
+
+	.about-us-cover, .about-us-content {
+		flex-basis: auto;
 	}
 }
 
@@ -110,6 +126,10 @@
 		height: 34rem;
 		border-width: 1.5rem;
 	}
+
+	.about-us-content {
+		padding: 2rem 4rem;
+	}
 }
 
 @media screen and (max-width:576px) {
@@ -129,6 +149,10 @@
 		width: 30rem;
 		height: 30rem;
 	}
+
+	.about-us__link {
+		width: 100%;
+	}
 }
 
 @media screen and (max-width:420px) {
@@ -145,7 +169,6 @@
 	}
 
 	.home__links-wrapper {
-		gap: 2rem;
 		width: 100%;
 	}
 
