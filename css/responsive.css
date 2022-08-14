@@ -1,3 +1,9 @@
+@media screen and (min-width:1400px) {
+	.container {
+		width: 125rem;
+	}
+}
+
 @media screen and (max-width:1400px) {
 	.home {
 		height: 70rem;
@@ -25,6 +31,10 @@
 
 	.about-us-content {
 		flex-basis: 50%;
+	}
+
+	.service {
+		padding: 7rem 2rem;
 	}
 }
 
@@ -130,6 +140,14 @@
 	.about-us-content {
 		padding: 2rem 4rem;
 	}
+
+	.service {
+		padding: 4rem 1rem;
+	}
+
+	.service__icon {
+		width: 6rem;
+	}
 }
 
 @media screen and (max-width:576px) {
@@ -152,6 +170,10 @@
 
 	.about-us__link {
 		width: 100%;
+	}
+
+	.service {
+		padding: 5rem 2rem;
 	}
 }
 
