@@ -56,6 +56,14 @@ Helper Classes - Start
 .align-items-center {
   align-items: center;
 }
+
+.skew-reset {
+	transform: skewY(6deg)
+}
+
+.h-full {
+	height: 100%;
+}
 /*------------------------------
 Helper Classes - End
 ------------------------------*/
@@ -382,6 +390,7 @@ About Us - End
 Services - Start
 ------------------------------*/
 .services {
+	margin-bottom: 10rem;
 }
 
 .service {
@@ -445,6 +454,13 @@ Services - Start
 
 /*------------------------------
 Services - End
+------------------------------*/
+/*------------------------------
+Resume - Start
+------------------------------*/
+
+/*------------------------------
+Resume - End
 ------------------------------*/
 /*------------------------------
 Main - End
