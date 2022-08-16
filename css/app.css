@@ -58,11 +58,11 @@ Helper Classes - Start
 }
 
 .skew-reset {
-	transform: skewY(6deg)
+  transform: skewY(6deg);
 }
 
 .h-full {
-	height: 100%;
+  height: 100%;
 }
 /*------------------------------
 Helper Classes - End
@@ -91,7 +91,7 @@ Components - Start
 
 .section-head {
   text-align: center;
-	padding-top: 10rem;
+  padding-top: 10rem;
   padding-bottom: 5rem;
 }
 
@@ -390,17 +390,17 @@ About Us - End
 Services - Start
 ------------------------------*/
 .services {
-	margin-bottom: 10rem;
+  margin-bottom: 10rem;
 }
 
 .service {
-	height: 100%;
+  height: 100%;
   color: var(--white);
   text-align: center;
   padding: 7rem 3rem;
-	position: relative;
-	z-index: 5;
-	overflow: hidden;
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
 }
 
 .service__icon {
@@ -409,23 +409,23 @@ Services - Start
 .service__title {
   font-size: 2.4rem;
   font-family: var(--font-bold);
-	margin-top: 1.6rem;
-	margin-bottom: 0;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-	overflow: hidden;
+  margin-top: 1.6rem;
+  margin-bottom: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .service__caption {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .service__wave {
-	width: 100%;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	z-index: -1;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .services--purple {
@@ -458,7 +458,82 @@ Services - End
 /*------------------------------
 Resume - Start
 ------------------------------*/
+.resume {
+  box-shadow: 0 0 6rem rgba(19, 182, 255, 0.24);
+  margin-bottom: 10rem;
+  padding: 10rem 0;
+  transform: skewY(-6deg);
+  background-color: var(--section-bg-color);
+}
 
+.resume-list {
+  background-color: var(--main-bg-color);
+  box-shadow: 0 0 4rem rgba(96, 233, 255, 0.27);
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.resume-list::before {
+  content: "";
+  width: 4rem;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  z-index: -1;
+}
+
+.resume-list__item {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+	padding: 0.8rem 0;
+	cursor: pointer;
+}
+
+.resume-list__item:last-child {
+  margin-bottom: 0;
+}
+
+.resume-list__item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: var(--primary-color);
+  width: 5.4rem;
+	z-index: -1;
+	border-radius: 3rem;
+	transition: all 0.2s ease-in;
+}
+
+.resume-list__item--active {
+	color: var(--white);
+}
+
+.resume-list__item--active::before {
+	max-width: 26rem;
+	width: 100%;
+}
+
+.resume-list__icon {
+  width: 2.2rem;
+  height: 2.2rem;
+  margin: 0 0.8rem;
+}
+
+.resume-list__title {
+  font-family: var(--font-sb);
+  font-size: 1.8rem;
+  margin-left: 2.5rem;
+	transition: all 0.2s ease-in;
+}
 /*------------------------------
 Resume - End
 ------------------------------*/
