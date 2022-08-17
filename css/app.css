@@ -91,7 +91,6 @@ Components - Start
 
 .section-head {
   text-align: center;
-  padding-top: 10rem;
   padding-bottom: 5rem;
 }
 
@@ -254,6 +253,7 @@ Home - Start
   background-repeat: no-repeat;
   background-position: bottom;
   height: 82rem;
+	margin-bottom: 10rem;
 }
 
 .home__name {
@@ -304,6 +304,7 @@ Home - End
 About Us - Start
 ------------------------------*/
 .about-us {
+	margin-bottom: 10rem;
 }
 
 .about-wrapper {
@@ -390,7 +391,7 @@ About Us - End
 Services - Start
 ------------------------------*/
 .services {
-  margin-bottom: 10rem;
+	margin-bottom: 10rem;
 }
 
 .service {
@@ -460,8 +461,8 @@ Resume - Start
 ------------------------------*/
 .resume {
   box-shadow: 0 0 6rem rgba(19, 182, 255, 0.24);
-  margin-bottom: 10rem;
-  padding: 10rem 0;
+	margin-bottom: 10rem;
+  padding: 8rem 0;
   transform: skewY(-6deg);
   background-color: var(--section-bg-color);
 }
@@ -474,6 +475,8 @@ Resume - Start
   display: flex;
   flex-direction: column;
   justify-content: center;
+	min-height: 47rem;
+	margin-right: 3rem;
 }
 
 .resume-list::before {
@@ -488,11 +491,11 @@ Resume - Start
 }
 
 .resume-list__item {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
   display: flex;
   align-items: center;
   position: relative;
-	padding: 0.8rem 0;
+	padding: 1rem 0;
 	cursor: pointer;
 }
 
@@ -502,7 +505,7 @@ Resume - Start
 
 .resume-list__item::before {
   content: "";
-	max-width: 26rem;
+	max-width: 27rem;
   position: absolute;
   left: 0;
   top: 0;
@@ -534,6 +537,76 @@ Resume - Start
   margin-left: 2.5rem;
 	transition: all 0.2s ease-in;
 }
+
+.resume-content {
+	border-left: 0.2rem solid var(--primary-color);
+	padding-left: 3rem;
+	padding-top: 1rem;
+	height: 0;
+	overflow: hidden;
+	opacity: 0;
+	transition: opacity 0.2s ease-in;
+}
+
+.resume-content--show {
+	height: auto;
+	overflow: visible;
+	opacity: 1;
+}
+
+.resume-content__item {
+	margin-bottom: 2rem;
+}
+
+.resume-content__item:last-child {
+	margin-bottom: 2rem;
+}
+
+.resume-content__head {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.resume-content__title {
+	color: #FF5823;
+	font-family: var(--font-sb);
+	font-size: 1.8rem;
+	margin: 0;
+	position: relative;
+}
+
+.resume-content__title::before {
+	content: "";
+	position: absolute;
+	left: -4rem;
+	top: 0;
+	bottom: 0;
+	width: 1.8rem;
+	height: 1.8rem;
+	border-radius: 100%;
+	margin: auto;
+	background-color: var(--primary-color);
+}
+
+.resume-content__date {
+	background-color: #F07F17;
+	color: var(--white);
+	border-radius: 2rem;
+	padding: 0.2rem 1.5rem;
+	box-shadow: 0 0 4rem rgba(245, 127, 23, 0.24);
+}
+
+.resume-content__subtitle {
+	font-family: var(--font-sb);
+	font-size: 1.6rem;
+	margin: 1rem 0;
+}
+
+.resume-content__description {
+	margin: 0;
+}
+
 /*------------------------------
 Resume - End
 ------------------------------*/
