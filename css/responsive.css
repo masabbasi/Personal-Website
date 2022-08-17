@@ -36,6 +36,10 @@
 	.service {
 		padding: 7rem 2rem;
 	}
+
+	.resume-list {
+		margin-right: 0;
+	}
 }
 
 @media screen and (max-width:992px) {
@@ -79,6 +83,37 @@
 	.about-us-cover, .about-us-content {
 		flex-basis: auto;
 	}
+	.resume-list {
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: flex-start;
+		gap:0.5rem;
+		flex-wrap: wrap;
+		min-height: auto;
+		box-shadow: none;
+		background-color: transparent;
+	}
+
+	.resume-list__item {
+		background-color: var(--primary-color);
+		border-radius: 4rem;
+		padding: 1rem 1.5rem;
+		margin-bottom: 0;
+	}
+
+	.resume-list::before, .resume-list__item::before {
+		content: none;
+	}
+
+	.resume-list__icon {
+		display: none;
+	}
+
+	.resume-list__title {
+		font-size: 1.6rem;
+		margin: 0;
+	}
+
 }
 
 @media screen and (max-width:768px) {
@@ -215,5 +250,17 @@
 	.home__photo {
 		width: 24rem;
 		height: 24rem;
+	}
+
+	.resume-content__title {
+		font-size: 1.5rem;
+	}
+
+	.resume-content__date {
+		padding: 0.2rem 1rem;
+	}
+
+	.resume-list__item {
+    padding: 0.3rem 1.5rem;
 	}
 }
