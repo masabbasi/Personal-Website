@@ -502,6 +502,7 @@ Resume - Start
 
 .resume-list__item::before {
   content: "";
+	max-width: 26rem;
   position: absolute;
   left: 0;
   top: 0;
@@ -518,7 +519,6 @@ Resume - Start
 }
 
 .resume-list__item--active::before {
-	max-width: 26rem;
 	width: 100%;
 }
 
