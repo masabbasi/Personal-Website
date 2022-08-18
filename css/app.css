@@ -610,6 +610,83 @@ Resume - Start
 Resume - End
 ------------------------------*/
 /*------------------------------
+Portfolio - Strat
+------------------------------*/
+.portfolio {
+	margin-bottom: 10rem;
+}
+
+.portfolio-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 4rem;
+	flex-wrap: wrap;
+	gap: 0.4rem;
+}
+
+.portfolio-list__item {
+	padding: 1rem 3rem;
+	border-radius: 4rem;
+	border: 0.2rem solid var(--primary-color);
+	transition: all 0.2s ease-in;
+	cursor: pointer;
+}
+
+.portfolio-list__item--active {
+	color: var(--white);
+	background-color: var(--primary-color);
+}
+
+.portfolio-content {
+	height: 0;
+	overflow: hidden;
+	opacity: 0;
+	transition: opacity 0.2s ease-in;
+}
+
+.portfolio-content--show {
+	height: auto;
+	overflow: visible;
+	opacity: 1;
+}
+
+.portfolio-content__img {
+	width: 100%;
+}
+
+.swiper {
+
+}
+
+.swiper-wrapper {
+
+}
+
+.swiper-slide {
+
+}
+
+.swiper-pagination {
+	position: static !important;
+	margin-top: 1rem !important;
+}
+
+.swiper-pagination-bullet {
+	width: 1.8rem !important;
+	height: 1.8rem !important;
+	border: 0.3rem solid #BFBEBE !important;
+	background-color: var(--white) !important;
+}
+
+.swiper-pagination-bullet-active {
+border-color: var(--primary-color) !important;
+}
+
+/*------------------------------
+Portfolio - End
+------------------------------*/
+/*------------------------------
 Main - End
 ------------------------------*/
 /*------------------------------
