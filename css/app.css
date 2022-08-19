@@ -85,8 +85,18 @@ Components - Start
 }
 
 .btn--orange {
-  background-color: #f57f17;
+  background-color: #ff6331;
   box-shadow: 0 1.5rem 4rem rgba(245, 127, 23, 0.24);
+}
+
+.btn--purple {
+  background-color: #803afb;
+  box-shadow: 0 1.5rem 4rem rgba(128, 58, 251, 0.24);
+}
+
+.btn--red {
+  background-color: #f5276c;
+  box-shadow: 0 1.5rem 4rem rgba(245, 39, 108, 0.24);
 }
 
 .section-head {
@@ -253,7 +263,7 @@ Home - Start
   background-repeat: no-repeat;
   background-position: bottom;
   height: 82rem;
-	margin-bottom: 10rem;
+  margin-bottom: 10rem;
 }
 
 .home__name {
@@ -304,7 +314,7 @@ Home - End
 About Us - Start
 ------------------------------*/
 .about-us {
-	margin-bottom: 10rem;
+  margin-bottom: 10rem;
 }
 
 .about-wrapper {
@@ -391,7 +401,7 @@ About Us - End
 Services - Start
 ------------------------------*/
 .services {
-	margin-bottom: 10rem;
+  margin-bottom: 10rem;
 }
 
 .service {
@@ -402,9 +412,6 @@ Services - Start
   position: relative;
   z-index: 5;
   overflow: hidden;
-}
-
-.service__icon {
 }
 
 .service__title {
@@ -461,7 +468,7 @@ Resume - Start
 ------------------------------*/
 .resume {
   box-shadow: 0 0 6rem rgba(19, 182, 255, 0.24);
-	margin-bottom: 10rem;
+  margin-bottom: 10rem;
   padding: 8rem 0;
   transform: skewY(-6deg);
   background-color: var(--section-bg-color);
@@ -475,8 +482,8 @@ Resume - Start
   display: flex;
   flex-direction: column;
   justify-content: center;
-	min-height: 42rem;
-	margin-right: 3rem;
+  min-height: 42rem;
+  margin-right: 3rem;
 }
 
 .resume-list::before {
@@ -495,8 +502,8 @@ Resume - Start
   display: flex;
   align-items: center;
   position: relative;
-	padding: 1rem 0;
-	cursor: pointer;
+  padding: 1rem 0;
+  cursor: pointer;
 }
 
 .resume-list__item:last-child {
@@ -505,24 +512,24 @@ Resume - Start
 
 .resume-list__item::before {
   content: "";
-	max-width: 27rem;
+  max-width: 27rem;
   position: absolute;
   left: 0;
   top: 0;
   bottom: 0;
   background-color: var(--primary-color);
   width: 5.4rem;
-	z-index: -1;
-	border-radius: 3rem;
-	transition: all 0.2s ease-in;
+  z-index: -1;
+  border-radius: 3rem;
+  transition: all 0.2s ease-in;
 }
 
 .resume-list__item--active {
-	color: var(--white);
+  color: var(--white);
 }
 
 .resume-list__item--active::before {
-	width: 100%;
+  width: 100%;
 }
 
 .resume-list__icon {
@@ -535,75 +542,75 @@ Resume - Start
   font-family: var(--font-sb);
   font-size: 1.8rem;
   margin-left: 2.5rem;
-	transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .resume-content {
-	border-left: 0.2rem solid var(--primary-color);
-	padding-left: 3rem;
-	height: 0;
-	overflow: hidden;
-	opacity: 0;
-	transition: opacity 0.2s ease-in;
+  border-left: 0.2rem solid var(--primary-color);
+  padding-left: 3rem;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
 }
 
 .resume-content--show {
-	height: auto;
-	overflow: visible;
-	opacity: 1;
+  height: auto;
+  overflow: visible;
+  opacity: 1;
 }
 
 .resume-content__item {
-	margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .resume-content__item:last-child {
-	margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .resume-content__head {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .resume-content__title {
-	color: #FF5823;
-	font-family: var(--font-sb);
-	font-size: 1.8rem;
-	margin: 0;
-	position: relative;
+  color: #ff5823;
+  font-family: var(--font-sb);
+  font-size: 1.8rem;
+  margin: 0;
+  position: relative;
 }
 
 .resume-content__title::before {
-	content: "";
-	position: absolute;
-	left: -4rem;
-	top: 0;
-	bottom: 0;
-	width: 1.8rem;
-	height: 1.8rem;
-	border-radius: 100%;
-	margin: auto;
-	background-color: var(--primary-color);
+  content: "";
+  position: absolute;
+  left: -4rem;
+  top: 0;
+  bottom: 0;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 100%;
+  margin: auto;
+  background-color: var(--primary-color);
 }
 
 .resume-content__date {
-	background-color: #F07F17;
-	color: var(--white);
-	border-radius: 2rem;
-	padding: 0.2rem 1.5rem;
-	box-shadow: 0 0 4rem rgba(245, 127, 23, 0.24);
+  background-color: #f07f17;
+  color: var(--white);
+  border-radius: 2rem;
+  padding: 0.2rem 1.5rem;
+  box-shadow: 0 0 4rem rgba(245, 127, 23, 0.24);
 }
 
 .resume-content__subtitle {
-	font-family: var(--font-sb);
-	font-size: 1.6rem;
-	margin: 1rem 0;
+  font-family: var(--font-sb);
+  font-size: 1.6rem;
+  margin: 1rem 0;
 }
 
 .resume-content__description {
-	margin: 0;
+  margin: 0;
 }
 
 /*------------------------------
@@ -613,78 +620,145 @@ Resume - End
 Portfolio - Strat
 ------------------------------*/
 .portfolio {
-	margin-bottom: 10rem;
+  margin-bottom: 10rem;
 }
 
 .portfolio-list {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 4rem;
-	flex-wrap: wrap;
-	gap: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+  gap: 0.4rem;
 }
 
 .portfolio-list__item {
-	padding: 1rem 3rem;
-	border-radius: 4rem;
-	border: 0.2rem solid var(--primary-color);
-	transition: all 0.2s ease-in;
-	cursor: pointer;
+  padding: 1rem 3rem;
+  border-radius: 4rem;
+  border: 0.2rem solid var(--primary-color);
+  transition: all 0.2s ease-in;
+  cursor: pointer;
 }
 
 .portfolio-list__item--active {
-	color: var(--white);
-	background-color: var(--primary-color);
+  color: var(--white);
+  background-color: var(--primary-color);
 }
 
 .portfolio-content {
-	height: 0;
-	overflow: hidden;
-	opacity: 0;
-	transition: opacity 0.2s ease-in;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
 }
 
 .portfolio-content--show {
-	height: auto;
-	overflow: visible;
-	opacity: 1;
+  height: auto;
+  overflow: visible;
+  opacity: 1;
 }
 
 .portfolio-content__img {
-	width: 100%;
-}
-
-.swiper {
-
-}
-
-.swiper-wrapper {
-
-}
-
-.swiper-slide {
-
+  width: 100%;
 }
 
 .swiper-pagination {
-	position: static !important;
-	margin-top: 1rem !important;
+  position: static !important;
+  margin-top: 1rem !important;
 }
 
 .swiper-pagination-bullet {
-	width: 1.8rem !important;
-	height: 1.8rem !important;
-	border: 0.3rem solid #BFBEBE !important;
-	background-color: var(--white) !important;
+  width: 1.8rem !important;
+  height: 1.8rem !important;
+  border: 0.3rem solid #bfbebe !important;
+  background-color: var(--white) !important;
 }
 
 .swiper-pagination-bullet-active {
-border-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
 }
 
 /*------------------------------
 Portfolio - End
+------------------------------*/
+/*------------------------------
+Pricing - Start
+------------------------------*/
+.pricing {
+  box-shadow: 0 0 6rem rgba(19, 182, 255, 0.24);
+  margin-bottom: 10rem;
+  padding: 8rem 0 14rem 0;
+  transform: skewY(-6deg);
+  background-color: var(--section-bg-color);
+}
+
+.package {
+  box-shadow: 0 0 5rem rgba(96, 233, 255, 0.27);
+}
+
+.package__head {
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3rem 0;
+}
+
+.package__type {
+  margin: 0;
+  font-family: var(--font-sb);
+  font-size: 3.2rem;
+}
+
+.package__price {
+  font-family: var(--font-sb);
+  font-size: 2.6rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.package__filter {
+}
+
+.package__body {
+  padding: 3rem 0;
+}
+
+.package-options {
+  width: 17rem;
+  margin: 0 auto;
+}
+
+.package-options__item {
+  margin-bottom: 2rem;
+}
+
+.package-options__item:last-child {
+  margin-bottom: 0;
+}
+
+.package-options__icon {
+  margin-right: 1rem;
+}
+
+.package-btn {
+  margin: auto;
+  margin: 2.5rem auto 0 auto;
+}
+
+.package__head--orange {
+  background-color: #ff6331;
+}
+
+.package__head--purple {
+  background-color: #803afb;
+}
+.package__head--red {
+  background-color: #f5276c;
+}
+/*------------------------------
+Pricing - End
 ------------------------------*/
 /*------------------------------
 Main - End
