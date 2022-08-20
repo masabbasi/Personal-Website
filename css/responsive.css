@@ -114,6 +114,13 @@
 		margin: 0;
 	}
 
+	.contact-us__map {
+		display: none;
+	}
+
+	.contact-us__right {
+		margin-right: auto;
+	}
 }
 
 @media screen and (max-width:768px) {
@@ -232,6 +239,18 @@
 	.home__link {
 		width: 100%;
 	}
+
+	.contact-us__right {
+		padding: 4.5rem 2rem;
+	}
+
+	.contact-us__form {
+    gap: 1rem;
+	}
+
+	.contact-us__wrapper {
+    height: 70rem;
+	}
 }
 
 @media screen and (max-width:350px) {
@@ -262,5 +281,13 @@
 
 	.resume-list__item {
     padding: 0.3rem 1.5rem;
+	}
+
+	.contact-us__title {
+    font-size: 2.8rem;
+	}
+
+	.contact-us__input {
+    padding: 1rem 1.8rem
 	}
 }
