@@ -263,7 +263,7 @@ Home - Start
   background-repeat: no-repeat;
   background-position: bottom;
   height: 82rem;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 }
 
 .home__name {
@@ -314,7 +314,7 @@ Home - End
 About Us - Start
 ------------------------------*/
 .about-us {
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 }
 
 .about-wrapper {
@@ -401,7 +401,7 @@ About Us - End
 Services - Start
 ------------------------------*/
 .services {
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 }
 
 .service {
@@ -438,26 +438,32 @@ Services - Start
 
 .services--purple {
   background-color: #8540ff;
+	box-shadow: 0 0 4rem rgba(118, 13, 255, 0.35);
 }
 
 .services--yellow {
   background-color: #ffc50c;
+	box-shadow: 0 0 4rem rgba(255, 197, 12, 0.35);
 }
 
 .services--red {
   background-color: #ec407a;
+	box-shadow: 0 0 4rem rgba(236, 64, 122, 0.35);
 }
 
 .services--orange {
   background-color: #ff6331;
+	box-shadow: 0 0 4rem rgba(255, 99, 49, 0.35);
 }
 
 .services--blue {
   background-color: #13b6ff;
+	box-shadow: 0 0 4rem rgba(19, 182, 255, 0.35);
 }
 
 .services--green {
   background-color: #49af46;
+	box-shadow: 0 0 4rem rgba(73, 175, 70, 0.35);
 }
 
 /*------------------------------
@@ -468,7 +474,7 @@ Resume - Start
 ------------------------------*/
 .resume {
   box-shadow: 0 0 6rem rgba(19, 182, 255, 0.24);
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
   padding: 8rem 0;
   transform: skewY(-6deg);
   background-color: var(--section-bg-color);
@@ -620,7 +626,7 @@ Resume - End
 Portfolio - Strat
 ------------------------------*/
 .portfolio {
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 }
 
 .portfolio-list {
@@ -638,6 +644,10 @@ Portfolio - Strat
   border: 0.2rem solid var(--primary-color);
   transition: all 0.2s ease-in;
   cursor: pointer;
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .portfolio-list__item--active {
@@ -686,7 +696,7 @@ Pricing - Start
 ------------------------------*/
 .pricing {
   box-shadow: 0 0 6rem rgba(19, 182, 255, 0.24);
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
   padding: 8rem 0 14rem 0;
   transform: skewY(-6deg);
   background-color: var(--section-bg-color);
@@ -761,10 +771,7 @@ Pricing - Start
 Pricing - End
 ------------------------------*/
 /*------------------------------
-.Contact Us - Start {
-
-}
-
+.Contact Us - Start
 ------------------------------*/
 .contact-us__wrapper {
   height: 78rem;
