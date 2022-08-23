@@ -58,7 +58,7 @@ Helper Classes - Start
 }
 
 .skew-reset {
-  transform: skewY(6deg);
+  transform: translateZ(0)	skewY(6deg);
 }
 
 .h-full {
@@ -186,18 +186,18 @@ Header - Start
   margin-left: 0;
 }
 
+.menu__item--active {
+  color: var(--primary-color);
+}
+
 .menu__link {
   display: block;
-  color: var(--text-color);
+  color: inherit;
   font-family: var(--font-med);
   transition: color 150ms ease-in;
 }
 
 .menu__link:hover {
-  color: var(--primary-color);
-}
-
-.menu__link--active {
   color: var(--primary-color);
 }
 
@@ -476,7 +476,7 @@ Resume - Start
   box-shadow: 0 0 6rem rgba(19, 182, 255, 0.24);
   margin-bottom: 5rem;
   padding: 8rem 0;
-  transform: skewY(-6deg);
+  transform: translateZ(0) skewY(-6deg);
   background-color: var(--section-bg-color);
 }
 
@@ -698,7 +698,7 @@ Pricing - Start
   box-shadow: 0 0 6rem rgba(19, 182, 255, 0.24);
   margin-bottom: 5rem;
   padding: 8rem 0 14rem 0;
-  transform: skewY(-6deg);
+  transform: translateZ(0) skewY(-6deg);
   background-color: var(--section-bg-color);
 }
 
