@@ -3,15 +3,16 @@
 @import "grid.css";
 
 :root {
-  /*------------------------------
+/*------------------------------
 Colors Variables
 ------------------------------*/
-  --text-color: #333333; /*For Night Mode: #*/
-  --main-bg-color: #ffffff; /*For Night Mode: #*/
-  --section-bg-color: #ffffff; /*For Night Mode: #*/
+  --text-color: #333333;
+  --main-bg-color: #ffffff;
+  --section-bg-color: #ffffff;
   --primary-color: #0abead;
   --white: #ffffff;
-  /*------------------------------
+	transition: color 2s ease-in;
+/*------------------------------
 Fonts Variables
 ------------------------------*/
   --font-reg: "Poppins Regular", Arial, Helvetica, sans-serif;
@@ -19,6 +20,24 @@ Fonts Variables
   --font-sb: "Poppins SemiBold", Arial, Helvetica, sans-serif;
   --font-bold: "Poppins Bold", Arial, Helvetica, sans-serif;
   --font-black: "Poppins Black", Arial, Helvetica, sans-serif;
+}
+
+:root.dark-theme {
+	--text-color: #95A5C6;
+  --main-bg-color: #161D26;
+  --section-bg-color: #1F2935;
+}
+
+:root.dark-theme .header,:root.dark-theme .home__photo,:root.dark-theme .about-wrapper,:root.dark-theme .resume,:root.dark-theme .resume-list,:root.dark-theme .pricing,:root.dark-theme .package{
+	box-shadow: none;
+}
+
+:root.dark-theme .home{
+	background-image:url("../images/shapes/header-shape-dark.svg");
+}
+
+:root.dark-theme .resume-content__title {
+	color: #F57F17;
 }
 
 html {
@@ -528,6 +547,7 @@ Resume - Start
   z-index: -1;
   border-radius: 3rem;
   transition: all 0.2s ease-in;
+	box-shadow: 0 0 4rem rgba(96, 233, 255, 0.27);
 }
 
 .resume-list__item--active {
@@ -682,6 +702,7 @@ Portfolio - Strat
   height: 1.8rem !important;
   border: 0.3rem solid #bfbebe !important;
   background-color: var(--white) !important;
+	opacity: 1 !important;
 }
 
 .swiper-pagination-bullet-active {
@@ -733,6 +754,7 @@ Pricing - Start
 
 .package__body {
   padding: 3rem 0;
+	background-color: var(--main-bg-color);
 }
 
 .package-options {
@@ -800,7 +822,7 @@ Pricing - End
 
 .contact-us__right {
   max-width: 55rem;
-  background-color: var(--main-bg-color);
+	background-color: var(--section-bg-color);
   box-shadow: 0 0 4rem rgba(19, 182, 255, 0.24);
   padding: 4.5rem;
   margin-left: auto;
@@ -827,6 +849,7 @@ Pricing - End
   padding: 1.5rem 2.5rem;
   box-shadow: 0 0 5rem rgba(96, 233, 255, 0.27);
   color: var(--text-color);
+	background-color: var(--main-bg-color);
 }
 
 .contact-us__input::placeholder {
@@ -880,7 +903,7 @@ Footer - Start
   gap: 1rem;
 }
 
-.footer__social {
+.footer__social,.change-theme {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -889,6 +912,7 @@ Footer - Start
   border-radius: 100%;
   background-color: #1f2935;
 	transition: background-color 150ms ease-in;
+	cursor: pointer;
 }
 
 .footer__social:hover {
@@ -899,7 +923,11 @@ Footer - Start
 .footer__social svg {
   width: 3rem;
   height: 3rem;
-	fill: var(--main-bg-color)	
+	fill: var(--main-bg-color);	
+}
+
+.change-theme svg {
+	fill: var(--white)
 }
 
 /*------------------------------
