@@ -103,7 +103,7 @@
     transition: all 0.2s ease-in;
     cursor: pointer;
     margin-bottom: auto;
-		flex-grow: 1;
+    flex-grow: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -224,6 +224,10 @@
 }
 
 @media screen and (max-width: 576px) {
+  * {
+    cursor: default !important;
+  }
+
   .home {
     height: 80rem;
   }
@@ -328,7 +332,7 @@
     padding: 1rem 1.8rem;
   }
 
-	.portfolio-list__item {
+  .portfolio-list__item {
     padding: 0.3rem 1.5rem;
-}
+  }
 }
